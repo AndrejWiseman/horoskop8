@@ -2,13 +2,30 @@
 
 {% block content %}
 
-    <h2>{{ horoskop.znak | capfirst }}</h2>
+
+    <h2>{{ detaljno.slug | capfirst }}</h2>
     <h4>Dnevni:</h4>
-    <p>{{ horoskop.dnevni }}</p>
+    <p>{{ detaljno.dnevni }}</p>
     <hr>
     <h4>Nedeljni:</h4>
-    <p>{{ horoskop.nedeljni }}</p>
+    <p>{{ detaljno.nedeljni }}</p>
     <hr>
+{#    <h3>Mesecni:</h3>#}
+{#    <p>{{ horoskop.mesecni }}</p>#}
+{#    <hr>#}
+{#    <h3>Godisnji:</h3>#}
+{#    <p>{{ horoskop.godisnji }}</p>#}
+
+
+
+
+{#    <h2>{{ horoskop.znak | capfirst }}</h2>#}
+{#    <h4>Dnevni:</h4>#}
+{#    <p>{{ horoskop.dnevni }}</p>#}
+{#    <hr>#}
+{#    <h4>Nedeljni:</h4>#}
+{#    <p>{{ horoskop.nedeljni }}</p>#}
+{#    <hr>#}
 {#    <h3>Mesecni:</h3>#}
 {#    <p>{{ horoskop.mesecni }}</p>#}
 {#    <hr>#}

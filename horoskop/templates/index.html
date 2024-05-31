@@ -3,14 +3,14 @@
 {% block content %}
     <h1>Zdravo Danijela! :)</h1>
 
-    <a href="{% url 'horoskop' znak='blizanci' %}" class="btn btn-outline-danger">Blizanci</a>
-    <a href="{% url 'horoskop' znak='vodolija' %}" class="btn btn-outline-danger">Vodolija</a>
+{#    <a href="{% url 'horoskop' znak='blizanci' %}" class="btn btn-outline-danger">Blizanci</a>#}
+{#    <a href="{% url 'horoskop' znak='vodolija' %}" class="btn btn-outline-danger">Vodolija</a>#}
 
-{#    {% for qs in queryset %}#}
-{##}
-{#        <a href="{{ qs.get_absolute_url }}" class="btn btn-outline-danger">{{ qs.znak }}</a>#}
-{##}
-{#    {% endfor %}#}
+    {% for qs in queryset %}
+
+        <a href="{{ qs.get_absolute_url }}" class="btn btn-outline-danger">{{ qs.znak | capfirst }}</a>
+
+    {% endfor %}
 
 
 {% endblock %}
