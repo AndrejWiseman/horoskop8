@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{{ detaljno.znak }}</h1>
 
+    <h2>{{ horoskop.znak | capfirst }}</h2>
     <h3>Dnevni:</h3>
-    <p>{{ detaljno.dnevni }}</p>
-
+    <p>{{ horoskop.dnevni }}</p>
+    <hr>
     <h3>Nedeljni:</h3>
-    <p>{{ detaljno.nedeljni }}</p>
+    <p>{{ horoskop.nedeljni }}</p>
+    <hr>
+{#    <h3>Mesecni:</h3>#}
+{#    <p>{{ horoskop.mesecni }}</p>#}
+{#    <hr>#}
+{#    <h3>Godisnji:</h3>#}
+{#    <p>{{ horoskop.godisnji }}</p>#}
+
+
 {% endblock %}
