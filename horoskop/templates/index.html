@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Zdravo!</h1>
+
+    {% for qs in queryset %}
+
+        <a href="{{ qs.get_absolute_url }}" class="btn btn-outline-danger">{{ qs.znak }}</a>
+
+    {% endfor %}
+
+
+{% endblock %}
